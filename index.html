@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Identifying Animals by Sound</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="col-xs-12 header_div text-center">
+        <h2>Animal Identification</h2>
+        <p>Note: Play different sounds like barking, meowing, roaring, and mooing.</p>
+    </div>
+    <div>
+        <center>
+            <button class="btn btn-info" onclick="start();">Start</button>
+            <h4 id = "detected_animals">Detected Animals: <span id = "result_animal"></span></h4>
+            <h3 id = "detected_sound">Detected sound is: <span id = "result_sound"></span></h3>
+            <br>
+            <img id = "animalimg" src = "ear.png">
+        </center>
+    </div>
+    <div class = "copy_right_footer">Developed by - Hajun Jeon</div>
+    <script src = "main.js"></script>
+</body>
